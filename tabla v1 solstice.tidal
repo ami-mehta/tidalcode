@@ -1,0 +1,45 @@
+d1 $ s "tabla2:1*4"
+
+d2 $ s "tabla:7" 
+
+d1 $ s "tabla2:1*8"
+
+d6 $ slow 2 $ s "tabla:7*8" # room 0.8 # speed 1 
+
+hush
+
+d8 $ fast 2 $ "tabla2(2, 8)" # n (run 16) 
+
+d8 $ fast 2 $ "tabla2(2, 8)" # n (run 8)
+
+d8 $ fast 4 $ "tabla2(2, 8)" # n (run 4)
+
+d1 $ s "tabla2:1*8" # hush
+
+d3 $ jux rev $ fast 4 $ s "tabla(3,8)" # n (run 16) 
+
+d1 $ s "tabla2:1*8"
+
+d1 $ s "tabla2:1*16"
+
+d6 $ fast  $ s "tabla:7*8" # room 0.8 # speed 1
+
+d5 $ fast 4 $ s "tabla:8" # note "-12"
+
+d3 $ s "tabla*16" # n (run 16)
+
+d3 $ s "tabla*32" # n (run 16)
+
+d3 $ s "tabla*32" # n (run 8)
+
+d3 $ s "tabla*32" # n (run 8)
+
+d3 $ jux rev $ fast 2 $ s "tabla(3,8)" # n (run 16)
+
+d1 $ s "tabla2:1*16"
+
+hush
+
+d16 $ s "insect:2*2" 
+
+d16 $ s "insect:2*4"
